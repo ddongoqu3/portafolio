@@ -1,0 +1,259 @@
+/* Generales */
+:root {
+  --amarillo: #f8dd28;
+  --morado: #6733e2;
+  --blanco: #fff;
+  --negro: #000;
+  --fuentePrincipal: "Montserrat", sans-serif;
+  --fuenteSecundaria: "Open Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  width: 108rem;
+  box-shadow: 10px 10px 46px 2px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 10px 10px 46px 2px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 10px 10px 46px 2px rgba(0, 0, 0, 0.54);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fuentePrincipal);
+}
+
+p {
+  font-family: var(--fuenteSecundaria);
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 3rem;
+  padding: 2rem 0;
+}
+
+.header h2 {
+  color: #6733e2;
+  font-family: var(--fuentePrincipal);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav-ul {
+  width: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-link {
+  font-family: var(--fuentePrincipal);
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6733e2;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+/* section1 */
+.section1 {
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 60rem;
+  max-width: 100%;
+  margin-bottom: 6rem;
+}
+
+.section1 h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #6733e2;
+  position: absolute;
+  top: 12rem;
+  left: 7rem;
+}
+
+.section1 p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #6733e2;
+  position: absolute;
+  top: 20rem;
+  left: 7rem;
+}
+
+.section1 button {
+  background-color: #f8dd28;
+  border-radius: 1rem;
+  border-style: none;
+  color: #6733e2;
+  font-family: var(--fuenteSecundaria);
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 2rem;
+  position: absolute;
+  top: 30rem;
+  left: 7rem;
+}
+
+/* section2 */
+.section2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6rem;
+  margin-bottom: 6rem;
+}
+
+.section2-img {
+  padding: 2.5rem 2.5rem 4rem;
+  background-color: var(--morado);
+  border-radius: 1rem;
+  position: relative;
+  max-height: 42rem;
+}
+
+.section2-img img {
+  max-width: 45rem;
+}
+
+.section2-img p {
+  padding-top: 3rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.section2-text {
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+
+.section2-text h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section2-text h2 {
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 3.8rem;
+  color: #6733e2;
+  margin-bottom: 3rem;
+}
+
+.p-bold {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.p-normal {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section2 button {
+  background-color: #f8dd28;
+  border-radius: 1rem;
+  border-style: none;
+  color: #6733e2;
+  font-family: var(--fuenteSecundaria);
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+/* services */
+.services{
+  background-color: #6733e2;
+  padding: 2rem;
+}
+.services h2{
+  text-align: center;
+  color: #f8dd28;
+  font-weight: 700;
+  font-size: 6rem;
+  padding: 2rem 0 3rem;
+}
+.services h3{
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.contenedor-services{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.campo-service{
+  background-color: #fff;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.icono-service{
+  background-color: var(--amarillo);
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.campo-service h4{
+  font-weight: 700;
+  font-size: 2rem;
+  color: #6733e2;
+  margin-bottom: 2rem;
+}
+.campo-service p{
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.campo-service button{
+  background-color: #f8dd28;
+  border-radius: 3rem;
+  border-style: none;
+  color: #6733e2;
+  font-family: var(--fuenteSecundaria);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
