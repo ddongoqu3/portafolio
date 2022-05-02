@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": "Diego Dongo",
+      "empresa": "ABC SAC",
+      "email": "diegodongoqu@gmail.com",
+      "telefono": "947285832",
+      "notas": "1234",
+      "id": 1
+    },
+    {
+      "nombre": "Domenica Dongo",
+      "empresa": "XYZ SAC",
+      "email": "domenica@gmail.com",
+      "telefono": "987654321",
+      "notas": "Hola mundo 1",
+      "id": 4
+    }
+  ]
+}
